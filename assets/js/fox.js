@@ -67,8 +67,14 @@
     t.remove();
   }
 
-  async function play() {
+  async function play(again) {
+    if (again) {
+      log.style.transition = "opacity .6s";
+      log.style.opacity = "0";
+      await sleep(650);
+    }
     log.innerHTML = "";
+    log.style.opacity = "1";
     for (const s of steps) {
       if (s.who === "me") { await sleep(700); bubble("me", `<p>${s.text}</p>`); await sleep(500); }
       else if (s.who === "fox") { await typing(1200); const b = bubble("fox", `${avatar}<p>${s.text}</p>`); renderMark(b); await sleep(900); }
@@ -85,7 +91,7 @@
       }
     }
     await sleep(5200);
-    if (!reduce) play();
+    if (!reduce) play(true);
   }
 
   if (reduce) {
