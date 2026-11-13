@@ -31,22 +31,33 @@
 </header>
 <main id="conteudo">
 <section class="page-top">
-  <div class="wrap">
-    <p class="eyebrow in">Produto</p>
-    <h1 class="headline" data-rise>FOX</h1>
-    <p class="lead in d3">Assistentes de inteligência artificial integrados ao sistema de gestão da empresa. Primeira aplicação: provedores de internet por fibra óptica.</p>
+  <div class="wrap fox-hero">
+    <div>
+      <p class="eyebrow in">Produto</p>
+      <div class="fox-title"><span data-fox-mark="laranja" style="width:.9em;height:.9em;font-size:clamp(48px,6.6vw,104px)"></span><h1 class="headline" data-rise>FOX</h1></div>
+      <p class="lead in d3">Assistentes de inteligência artificial integrados ao sistema de gestão da empresa. Em produção na Info Missões, provedor de internet por fibra óptica e parceira direta da Athomon.</p>
+    </div>
+    <div class="big-mark" aria-hidden="true"><span data-fox-mark="laranja" data-draw></span><span class="orbit-dot"></span></div>
   </div>
 </section>
-<section class="wrap">
-  <figure class="media-card dark" data-media data-grow style="margin:0"><video autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1">
-      <source src="assets/media/ath-09.mp4" type="video/mp4">
-      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_3Ltc2vMDJ8bPHdyRY86cGGXdeo0/hf_20261112_053314_6e5d01b0-52cd-4d08-a341-68efa203b016.mp4" type="video/mp4">
-    </video></figure>
+
+<section class="section tight" aria-labelledby="demo-t">
+  <div class="wrap demo">
+    <div>
+      <h2 id="demo-t" data-rise>Um pedido, do início ao fim.</h2>
+      <p class="lead" style="margin:0;max-width:30ch;font-size:clamp(19px,1.6vw,22px);color:var(--muted)">O técnico pede, a FOX confere no sistema, propõe a ação e só executa depois da confirmação. Tudo fica registrado.</p>
+      <p class="note-small">Exemplo ilustrativo, com dados fictícios.</p>
+    </div>
+    <div class="chat" data-chat aria-label="Exemplo de conversa com a FOX">
+      <div class="chat-top"><span data-fox-mark="laranja"></span><div><b>FOX</b><small>Assistente da equipe</small></div></div>
+      <div class="chat-log" aria-live="off"></div>
+    </div>
+  </div>
 </section>
 
 <section class="section">
   <div class="wrap spec">
-    <h2 data-rise>Em produção<small>Assistente da equipe interna, via Telegram.</small></h2>
+    <h2 data-rise>Em produção<small>Assistente da equipe da Info Missões, via Telegram.</small></h2>
     <dl class="rows" data-stagger><div><dt>Situação financeira</dt><dd>Faturas e pagamentos do assinante.</dd><span class="tag">Consulta</span></div><div><dt>Credenciais PPPoE</dt><dd>Usuário e senha de conexão, entregues apenas à equipe autorizada.</dd><span class="tag">Consulta</span></div><div><dt>Limpeza de MAC</dt><dd>Libera o equipamento vinculado ao cadastro do assinante.</dd><span class="tag">Ação</span></div><div><dt>Sequência de reparo</dt><dd>Executa os passos padrão de reparo de conexão.</dd><span class="tag">Ação</span></div><div><dt>Link de pagamento</dt><dd>Gera o link da fatura para envio ao assinante.</dd><span class="tag">Ação</span></div></dl>
   </div>
 </section>
@@ -85,5 +96,6 @@
 </footer>
 <script src="assets/js/site.js" defer></script>
 <script src="assets/js/motion.js" defer></script>
+<script src="assets/js/fox.js" defer></script>
 </body>
 </html>
